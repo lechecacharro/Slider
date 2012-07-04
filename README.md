@@ -106,11 +106,12 @@ And, yes, maybe it could be more practical to call the plugin directly over the 
 ### Callbacks
 
 * **init**  
-  The init callback, called after the plugin has been initialized and all items have been positioned. You are encouraged to use the "init.slider" event instead, triggered on the list element
+  The init callback, called after the plugin has been initialized and all items have been positioned.
 
 * **before**  
-  The before callback, called *BEFORE* each animation, can be used to set-up any hook before animating the list. You are encouraged to use the "before.slider" event instead, triggered on the list element. The callback and the event listener gets passed the current index and the current list element
+  The before callback, called *BEFORE* each animation, can be used to set-up any hook before animating the list. The callback gets passed the current index and the current list element
 
 * **after**  
-  The after callback, called *AFTER* each animation, can be used to set-up any hook after animating the list. You are encouraged to use the "after.slider" event instead, triggered on the list element. The callback and the event listener gets passed the current index and the current list element
+  The after callback, called *AFTER* each animation, can be used to set-up any hook after animating the list. The callback gets passed the current index and the current list element
     
+You are encouraged to use events ("init.slider", "before.slider", and "after.slider"; triggered on the list element) instead of callbacks to hook into any relevant event.
