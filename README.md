@@ -12,6 +12,50 @@ $('#my-list-element').slider({
 });
 ```
 
+The plugin expects the following  element hierarchy:
+
+```plain
++--- MASK ELEMENT ----------------------------------------------+
+|                                                               |
+|  +--- LIST ELEMENT ----------------------------------------+  |
+|  |                                                         |  |
+|  |  +--- LIST ITEM 0 -----------------------------------+  |  |
+|  |  |                                                   |  |  |
+|  |  +---------------------------------------------------+  |  |
+|  |                                                         |  |
+|  |  +--- LIST ITEM 1 -----------------------------------+  |  |
+|  |  |                                                   |  |  |
+|  |  +---------------------------------------------------+  |  |
+|  |                                                         |  |
+|  |  ...                                                    |  |
+|  |                                                         |  |
+|  +---------------------------------------------------------+  |
+|                                                               |
++---------------------------------------------------------------+
+
++--- PREV BUTTON (anywhere; optional)---------------------------+
+|                                                               |
++---------------------------------------------------------------+
+
++--- NEXT BUTTON (anywhere; optional)---------------------------+
+|                                                               |
++---------------------------------------------------------------+
+
++--- NAVIGATION (anywhere; optional)----------------------------+
+|                                                               |
+|  +--- LIST ITEM 0 -----------------------------------------+  |
+|  |                                                         |  |
+|  +---------------------------------------------------------+  |
+|                                                               |
+|  +--- LIST ITEM 1 -----------------------------------------+  |
+|  |                                                         |  |
+|  +---------------------------------------------------------+  |
+|                                                               |
+|  ...                                                          |
+|                                                               |
++---------------------------------------------------------------+
+```
+
 ## Options
 
 ### General Options
@@ -39,9 +83,6 @@ $('#my-list-element').slider({
 
 * **stepByStep**  
   Whether to slide step-by-step (like when using prev() and next() methods) or move directly forward/backward (using move() method) to the given index (default)
-
-* **stepByStep**  
-  Whether to slide step-by-step (like when using prev() and next() methods) or move directly forward/backward (using move() method) to the given index
 
 ### Selectors
 
