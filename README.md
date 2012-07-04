@@ -49,7 +49,7 @@ $('#my-list-element').slider({
   Captions selector. If an element or set of elements down in the DOM hierarchy of any list item matchs this selector, it will be used as the item caption. Use a value which evaluates to false to disable captions (default is ".caption").
 
 * **mask**  
-  Mask selector. Note that mask MUST be outside the slider list (default is ".mask")
+  Mask selector. Note that mask *MUST* be outside the slider list (default is ".mask")
 
 * **navigation**  
   Navigation selector. Use a value which evaluates to false to disable navigation (default).
