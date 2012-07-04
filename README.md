@@ -56,6 +56,8 @@ The plugin expects the following  element hierarchy:
 +---------------------------------------------------------------+
 ```
 
+If the mask width is greater than the number of list items * the item width, WTF are you going to slide?
+
 And, yes, maybe it could be more practical to call the plugin directly over the mask element... 
 
 ## Options
