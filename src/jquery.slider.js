@@ -602,8 +602,6 @@ $.fn.slider = function(options) {
       /**
        * Moves to the given index.
        * 
-       * FIXME please!
-       * 
        * @private
        * @param {Number} index
        * @returns {Slider}
@@ -649,7 +647,7 @@ $.fn.slider = function(options) {
         list.children().animate({
           left: (delta > 0 ? '-=' : '+=') + ((Math.abs(delta) - 1) * itemWidth)
         }, {
-          duration: o.duration,
+          duration: o.animationDuration,
           complete: function() {
             var cloned = Math.abs(delta);
             if(++n === itemsToAnimate) {
